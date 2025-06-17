@@ -1,0 +1,857 @@
+[
+  {
+    "Category": "Wings",
+    "Item": "Traditional Wings",
+    "Description": "Authentic Buffalo-style bone-in chicken wings spun in your choice of sauce or dry seasoning:contentReference[oaicite:85]{index=85}",
+    "Available Sizes": ["Snack (5)", "Small (10)", "Medium (15)", "Large (20)"],
+    "Prices": {
+      "Snack": "$9.29",
+      "Small": "$12.69",
+      "Medium": "$17.99",
+      "Large": "$21.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wings",
+    "Item": "Boneless Wings",
+    "Description": "All-white chicken, breaded and hand-spun in your choice of Buffalo Wild Wings sauce or seasoning",
+    "Available Sizes": ["Snack", "Small", "Medium", "Large"],
+    "Prices": {
+      "Snack": "Prices vary by location",
+      "Small": "Prices vary by location",
+      "Medium": "Prices vary by location",
+      "Large": "Prices vary by location"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wings",
+    "Item": "Boneless & Traditional Combo",
+    "Description": "A combo of hand-spun traditional and boneless wings served together:contentReference[oaicite:86]{index=86}",
+    "Prices": {
+      "One Size": "$17.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wings",
+    "Item": "Wing Tuesday",
+    "Description": "Special Tuesday offer: discounted traditional wings per piece:contentReference[oaicite:87]{index=87}",
+    "Prices": {
+      "One Size": "$0.70/wing"
+    },
+    "Tags": ["promotion"]
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Buffalo Chips",
+    "Description": "Thick-cut potato chips fried to a golden crisp. Available in regular or basket size.",
+    "Available Sizes": ["Basket", "Regular"],
+    "Prices": {
+      "Basket": "$4.99",
+      "Regular": "$4.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Cheese Curds",
+    "Description": "Lightly battered cheese curds fried until gooey inside:contentReference[oaicite:88]{index=88}",
+    "Prices": {
+      "One Size": "$7.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Cheeseburger Slammers",
+    "Description": "Bite-sized cheeseburgers (sliders) served with fries:contentReference[oaicite:89]{index=89}",
+    "Prices": {
+      "One Size": "$10.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Chili Con Queso Dip",
+    "Description": "Warm queso and chili topped with pico de gallo; served with tortilla chips:contentReference[oaicite:90]{index=90}",
+    "Prices": {
+      "One Size": "$7.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Chips & Salsa",
+    "Description": "Warm tortilla chips served with salsa:contentReference[oaicite:91]{index=91}",
+    "Prices": {
+      "One Size": "$4.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Coleslaw",
+    "Description": "Tangy coleslaw side:contentReference[oaicite:92]{index=92}",
+    "Prices": {
+      "One Size": "$0.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "French Fries",
+    "Description": "Natural-cut French fries, optionally dusted with our signature seasoning:contentReference[oaicite:93]{index=93}",
+    "Available Sizes": ["Basket", "Regular"],
+    "Prices": {
+      "Basket": "$4.49",
+      "Regular": "$3.79"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Fried Pickles",
+    "Description": "Crunchy breaded dill pickle slices, served with southwestern ranch for dipping",
+    "Prices": {
+      "One Size": "$6.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Garden Crasher",
+    "Description": "Hummus and tzatziki with warm pita, carrots, celery, olives and peppers (shareable veggie platter)",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Jalapeno Pepper Bites",
+    "Description": "Breaded jalapeño bites stuffed with cheddar, mozzarella and bacon. Served with southwestern ranch:contentReference[oaicite:94]{index=94}",
+    "Prices": {
+      "One Size": "$6.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Mac & Cheese",
+    "Description": "A side of creamy macaroni & cheese:contentReference[oaicite:95]{index=95}",
+    "Prices": {
+      "One Size": "$3.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Mini Corn Dogs",
+    "Description": "Mini hot dogs wrapped in sweet cornmeal batter and fried golden",
+    "Prices": {
+      "One Size": "$4.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Mozzarella Sticks",
+    "Description": "Fried mozzarella cheese sticks served with marinara sauce:contentReference[oaicite:96]{index=96}",
+    "Prices": {
+      "One Size": "$7.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Onion Rings",
+    "Description": "Thick-cut onions battered and fried crisp, served with southwestern ranch:contentReference[oaicite:97]{index=97}",
+    "Available Sizes": ["Basket", "Regular"],
+    "Prices": {
+      "Basket": "$7.99",
+      "Regular": "$6.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Potato Wedges",
+    "Description": "Lightly seasoned potato wedges fried until crispy:contentReference[oaicite:98]{index=98}",
+    "Available Sizes": ["Basket", "Regular"],
+    "Prices": {
+      "Basket": "$4.99",
+      "Regular": "$4.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Pulled Pork Slammers",
+    "Description": "Pulled pork mini sandwiches served with fries:contentReference[oaicite:99]{index=99}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Quesadilla",
+    "Description": "A grilled flour tortilla stuffed with melted cheeses (and your choice of added protein):contentReference[oaicite:100]{index=100}",
+    "Prices": {
+      "One Size": "$8.69"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Roasted Garlic Mushrooms",
+    "Description": "Breaded garlic-seasoned mushrooms, fried and served with dipping sauce:contentReference[oaicite:101]{index=101}",
+    "Prices": {
+      "One Size": "$6.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Side Salads",
+    "Description": "Side Garden Salad or side Caesar Salad option:contentReference[oaicite:102]{index=102}",
+    "Prices": {
+      "One Size": "$4.79"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Soft Pretzels",
+    "Description": "Warm pretzel sticks served with queso and spicy mustard:contentReference[oaicite:103]{index=103}",
+    "Prices": {
+      "One Size": "$6.89"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Spinach Artichoke Dip",
+    "Description": "Creamy spinach & artichoke dip served with warm pita chips and veggies:contentReference[oaicite:104]{index=104}",
+    "Prices": {
+      "One Size": "$7.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Tablegating Sampler",
+    "Description": "Platter of traditional wings, soft pretzels with queso, pita with spinach artichoke dip, and bacon-cheese jalapeño bites:contentReference[oaicite:105]{index=105}",
+    "Prices": {
+      "One Size": "$13.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "The Sampler",
+    "Description": "Sampler of nachos, onion rings, mozzarella sticks and wings, with marinara, ranch and bleu cheese dips:contentReference[oaicite:106]{index=106}",
+    "Prices": {
+      "One Size": "$13.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Sharables & Sides",
+    "Item": "Ultimate Nachos",
+    "Description": "Tortilla chips loaded with chili, pico de gallo, lettuce, jalapeños, queso and salsa:contentReference[oaicite:107]{index=107}",
+    "Prices": {
+      "One Size": "$9.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Flatbreads",
+    "Item": "Buffalo Chicken Flatbread",
+    "Description": "Oven-baked flatbread pizza with Spicy Garlic sauce, bleu cheese, chicken, celery bits and a mozzarella-provolone blend:contentReference[oaicite:108]{index=108}",
+    "Prices": {
+      "One Size": "$9.79"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Flatbreads",
+    "Item": "Five Cheese Italian Pepperoni Flatbread",
+    "Description": "Thin-crust flatbread loaded with queso, mozzarella-provolone, cheddar jack, and spicy pepperoni:contentReference[oaicite:109]{index=109}",
+    "Prices": {
+      "One Size": "$9.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Flatbreads",
+    "Item": "Parmesan Garlic Chicken Flatbread",
+    "Description": "Flatbread topped with Parmesan Garlic sauce, grilled chicken and mozzarella-provolone cheese:contentReference[oaicite:110]{index=110}",
+    "Prices": {
+      "One Size": "$9.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Flatbreads",
+    "Item": "Spinach Artichoke Chicken Flatbread",
+    "Description": "Flatbread smothered in creamy spinach artichoke dip with grilled chicken and mozzarella-provolone cheese:contentReference[oaicite:111]{index=111}",
+    "Prices": {
+      "One Size": "$9.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Big Jack Daddy Burger",
+    "Description": "Burger topped with pulled pork, fried onion rings, cheddar-jack cheese and Honey BBQ sauce:contentReference[oaicite:112]{index=112}",
+    "Prices": {
+      "One Size": "$11.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Black & Bleu Burger",
+    "Description": "Cajun-seasoned burger topped with bleu cheese crumbles for a bayou bite:contentReference[oaicite:113]{index=113}",
+    "Prices": {
+      "One Size": "$10.79"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Buffalo Ranch Chicken Sandwich",
+    "Description": "Hand-breaded chicken breast tossed in Buffalo sauce and topped with ranch, lettuce, tomato and onion",
+    "Prices": {
+      "One Size": "$10.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Build Your Own Burger",
+    "Description": "Custom burger with choice of toppings. Pick your veggies, cheese (American, Cheddar, Swiss, Pepper Jack, or queso), add sauce or seasoning, and extras like bacon or chili:contentReference[oaicite:114]{index=114}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Jerk Chicken Sandwich",
+    "Description": "Grilled chicken breast topped with Caribbean Jerk sauce and melted bleu cheese; served with lettuce, tomato & onion:contentReference[oaicite:115]{index=115}",
+    "Prices": {
+      "One Size": "$10.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Juicy Steak Burger",
+    "Description": "Grilled beef patty topped with juicy prime rib, fried onion rings, pepper jack cheese and your choice of sauce:contentReference[oaicite:116]{index=116}",
+    "Prices": {
+      "One Size": "$11.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Pulled Pork Sandwich",
+    "Description": "Hickory-smoked pulled pork tossed in your choice of sauce. Served with coleslaw on the side:contentReference[oaicite:117]{index=117}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Screamin' Nacho Burger",
+    "Description": "Two mini patties with Chipotle BBQ seasoning, tortilla chips, pepper jack, jalapeños, pico de gallo and southwestern ranch:contentReference[oaicite:118]{index=118}",
+    "Prices": {
+      "One Size": "$10.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Burgers & Sandwiches",
+    "Item": "Slammers",
+    "Description": "Trio of bite-sized sandwich sliders (your choice of fillings) served with natural-cut French fries:contentReference[oaicite:119]{index=119}",
+    "Prices": {
+      "One Size": "$7.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Buffalo Ranch Chicken Wrap",
+    "Description": "Crispy chicken tenders topped with Medium Buffalo sauce and ranch dressing, with lettuce, tomato and cheese, wrapped in a flour tortilla:contentReference[oaicite:120]{index=120}",
+    "Prices": {
+      "One Size": "$10.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Chicken Wrap",
+    "Description": "Large flour tortilla filled with juicy grilled or crispy chicken, a blend of cheeses, lettuce, tomato and your favorite sauce or seasoning:contentReference[oaicite:121]{index=121}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Fish Tacos",
+    "Description": "Golden-crisp fish filets in soft tortillas with coleslaw, pico de gallo, a blend of cheeses and your favorite wing sauce. Served with tartar sauce:contentReference[oaicite:122]{index=122}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Grilled Chicken Buffalitos",
+    "Description": "Two soft flour tortillas with grilled chicken, lettuce, pico de gallo, cheese, sour cream and your choice of sauce or dry seasoning:contentReference[oaicite:123]{index=123}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Pepper Jack Steak Wrap",
+    "Description": "Savory wrap with seasoned prime rib, pepper jack cheese, lettuce, pico de gallo and southwestern ranch dressing:contentReference[oaicite:124]{index=124}",
+    "Prices": {
+      "One Size": "$10.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Wraps & Buffalitos",
+    "Item": "Southwest Chicken Queso Wrap",
+    "Description": "Grilled chicken smothered in queso and southwestern ranch, with lettuce and pico de gallo:contentReference[oaicite:125]{index=125}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Tenders & Shrimp",
+    "Item": "Chicken Tenders",
+    "Description": "All-white meat chicken tenders, lightly breaded and fried crispy. Served with your choice of dipping sauce:contentReference[oaicite:126]{index=126}",
+    "Available Sizes": ["4 Tenders", "6 Tenders"],
+    "Prices": {
+      "4 Tenders": "$8.99",
+      "6 Tenders": "$10.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Tenders & Shrimp",
+    "Item": "Naked Tenders",
+    "Description": "Juicy grilled chicken tenders (no breading) seasoned to perfection. Served with your favorite sauce or dry rub:contentReference[oaicite:127]{index=127}",
+    "Available Sizes": ["4 Naked Tenders", "6 Naked Tenders"],
+    "Prices": {
+      "4 Naked Tenders": "$8.49",
+      "6 Naked Tenders": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Tenders & Shrimp",
+    "Item": "Chicken Tenders & Popcorn Shrimp",
+    "Description": "Combination of crispy chicken Buffalo Tenders™ and peppercorn garlic popcorn shrimp:contentReference[oaicite:128]{index=128}",
+    "Prices": {
+      "One Size": "$13.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Tenders & Shrimp",
+    "Item": "Popcorn Shrimp",
+    "Description": "Signature peppercorn-garlic marinated popcorn shrimp, served with cocktail sauce or any wing sauce:contentReference[oaicite:129]{index=129}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Asian Chicken Salad",
+    "Description": "Crisp greens and cabbage topped with grilled chicken tossed in Asian Zing® sauce, mandarin oranges, fried wontons and light Asian sesame dressing:contentReference[oaicite:130]{index=130}",
+    "Prices": {
+      "One Size": "$10.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Chicken Caesar Salad",
+    "Description": "Romaine lettuce with grilled chicken tossed in Parmesan Garlic sauce, topped with Parmesan and croutons. Served with light Caesar dressing:contentReference[oaicite:131]{index=131}",
+    "Prices": {
+      "One Size": "$9.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Chicken Chop Salad",
+    "Description": "Fresh greens topped with grilled chicken in Honey BBQ sauce, plus bleu cheese, dried cranberries, candied walnuts and bacon; served with light balsamic vinaigrette:contentReference[oaicite:132]{index=132}",
+    "Prices": {
+      "One Size": "$11.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Chicken Tender Salad",
+    "Description": "Crispy Buffalo chicken tenders spun in your favorite sauce, over greens with tomatoes, cucumbers, carrots, onions, cheese and croutons:contentReference[oaicite:133]{index=133}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Grilled Blackened Chicken Salad",
+    "Description": "Grilled chicken breast with a roasted garlic rub, served over a fresh garden salad (a zesty twist on a classic):contentReference[oaicite:134]{index=134}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Grilled Chicken Salad",
+    "Description": "Seasoned grilled chicken over fresh greens with tomatoes, cucumbers, carrots, onions, a blend of cheeses and croutons:contentReference[oaicite:135]{index=135}",
+    "Prices": {
+      "One Size": "$9.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Mediterranean Salad",
+    "Description": "Fresh greens with lemon pepper chicken, tomato, cucumber, carrots, red peppers, onions, olives and bleu cheese. Served with tzatziki-feta dressing and warm pita:contentReference[oaicite:136]{index=136}",
+    "Prices": {
+      "One Size": "$10.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Salads",
+    "Item": "Mediterranean Salad w/ Chicken",
+    "Description": "A larger Mediterranean Salad with extra grilled chicken added for protein:contentReference[oaicite:137]{index=137}",
+    "Prices": {
+      "One Size": "$11.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Chicken BLT",
+    "Description": "Toasted sandwich with crispy chicken, bacon, lettuce, tomato and mayo – a lunchtime classic:contentReference[oaicite:138]{index=138}:contentReference[oaicite:139]{index=139}",
+    "Prices": {
+      "One Size": "$8.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Chicken Buffalito",
+    "Description": "A lunch-sized grilled chicken Buffalito (Buffalo chicken taco) with lettuce, pico, cheese and sauce:contentReference[oaicite:140]{index=140}",
+    "Prices": {
+      "One Size": "$6.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Garden Salad",
+    "Description": "Fresh side garden salad (mix of greens and veggies):contentReference[oaicite:141]{index=141}",
+    "Prices": {
+      "One Size": "$6.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Garden Salad w/ Chicken",
+    "Description": "Garden salad topped with grilled chicken:contentReference[oaicite:142]{index=142}",
+    "Prices": {
+      "One Size": "$7.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Hand-Spun Wings - Boneless (Small)",
+    "Description": "Small lunch portion of boneless wings (hand-spun in sauce):contentReference[oaicite:143]{index=143}",
+    "Prices": {
+      "One Size": "$11.69"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Hand-Spun Wings - Boneless (Snack)",
+    "Description": "Snack-size lunch portion of boneless wings:contentReference[oaicite:144]{index=144}",
+    "Prices": {
+      "One Size": "$8.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Hand-Spun Wings - Traditional (Small)",
+    "Description": "Small lunch portion of traditional wings (bone-in):contentReference[oaicite:145]{index=145}",
+    "Prices": {
+      "One Size": "$11.69"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Hand-Spun Wings - Traditional (Snack)",
+    "Description": "Snack-size traditional wings for lunch:contentReference[oaicite:146]{index=146}",
+    "Prices": {
+      "One Size": "$7.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Honey BBQ Chicken Salad",
+    "Description": "Lunch portion of fresh greens with grilled chicken tossed in Honey BBQ, pico, cheese and BBQ ranch dressing:contentReference[oaicite:147]{index=147}",
+    "Prices": {
+      "One Size": "$8.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Slammers",
+    "Description": "Pair of bite-sized sandwich Slammers served with natural-cut fries (lunchtime portion)",
+    "Prices": {
+      "One Size": "$7.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Lunch",
+    "Item": "Southwest Prime Rib Sandwich",
+    "Description": "Half-size prime rib sandwich with Southwestern seasoning (lunch special):contentReference[oaicite:148]{index=148}",
+    "Prices": {
+      "One Size": "$8.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Boneless Wings (Kids)",
+    "Description": "Kids’ serving of boneless wings (approx. 4 pieces) with a choice of sauce:contentReference[oaicite:149]{index=149}",
+    "Prices": {
+      "One Size": "$5.19"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Cheese Flatbread (Kids)",
+    "Description": "Kid-sized crispy flatbread topped with cheese:contentReference[oaicite:150]{index=150}",
+    "Prices": {
+      "One Size": "$4.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Cheeseburger Slammer (Kids)",
+    "Description": "One of our bite-sized cheeseburgers, perfect for kids:contentReference[oaicite:151]{index=151}",
+    "Prices": {
+      "One Size": "$4.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Chicken Tenders (Kids)",
+    "Description": "Kids’ order of breaded chicken tenders (3 pieces) served with a dipping sauce:contentReference[oaicite:152]{index=152}",
+    "Prices": {
+      "One Size": "$5.19"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Macaroni & Cheese (Kids)",
+    "Description": "A bowl of creamy macaroni & cheese, a kid-favorite side:contentReference[oaicite:153]{index=153}",
+    "Prices": {
+      "One Size": "$4.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Naked Tenders (Kids)",
+    "Description": "Grilled (unbreaded) chicken tenders for kids (3 pieces) with dipping sauce:contentReference[oaicite:154]{index=154}",
+    "Prices": {
+      "One Size": "$5.19"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Kids",
+    "Item": "Traditional Wings (Kids)",
+    "Description": "Kids’ portion of 4 traditional wings spun in choice of sauce:contentReference[oaicite:155]{index=155}",
+    "Prices": {
+      "One Size": "$5.19"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Cheesecake Bites",
+    "Description": "Mini cheesecake pieces fried to a golden crisp, served with chocolate or caramel for dipping",
+    "Prices": {
+      "One Size": "$4.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Chocolate Fudge Cake",
+    "Description": "A big rich slice of chocolate fudge cake drizzled with chocolate and served with vanilla ice cream:contentReference[oaicite:156]{index=156}",
+    "Prices": {
+      "One Size": "$5.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Cinnamon Squares",
+    "Description": "Warm bite-sized cinnamon-sugar dough squares, served with caramel or chocolate sauce on the side",
+    "Prices": {
+      "One Size": "$3.99"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Dessert Nacho",
+    "Description": "Deep-fried cinnamon-sugar tortilla chips topped with vanilla ice cream, cheesecake bites, and drizzles of chocolate & caramel:contentReference[oaicite:157]{index=157}",
+    "Prices": {
+      "One Size": "$8.29"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Ice Cream",
+    "Description": "A scoop of frosty vanilla ice cream with your choice of chocolate or caramel drizzle:contentReference[oaicite:158]{index=158}",
+    "Prices": {
+      "One Size": "$2.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Desserts",
+    "Item": "Loaded Ice Cream",
+    "Description": "Vanilla ice cream loaded with crispy cinnamon-sugar tortilla pieces and drizzled with chocolate & caramel (a new twist on “dessert nachos”)",
+    "Prices": {},
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Berry Lemonade",
+    "Description": "Refreshing lemonade infused with berry flavor",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Blueberry Lemonade",
+    "Description": "Lemonade with a burst of blueberry sweetness",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Cherry Limeade",
+    "Description": "Sweet cherry and zesty lime blended into a refreshing cooler",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Classic Limeade",
+    "Description": "Traditional lime citrus ade, perfectly sweet and tart",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Huckleberry Lemonade",
+    "Description": "Lemonade with the unique sweet-tart flavor of wild huckleberry",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Huckleberry Limeade",
+    "Description": "Tangy limeade with a sweet huckleberry twist",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Mango Lemonade",
+    "Description": "Tropical mango-flavored lemonade",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Red Bull Energy Drink",
+    "Description": "8.4 oz can of Red Bull energy drink (original)",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Red Bull Sugar Free",
+    "Description": "8.4 oz can of Red Bull Sugarfree energy drink",
+    "Prices": {
+      "One Size": "$3.49"
+    },
+    "Tags": []
+  },
+  {
+    "Category": "Drinks",
+    "Item": "Soft Drinks",
+    "Description": "Fountain soft drinks (Pepsi, Diet Pepsi, Mountain Dew, etc.)",
+    "Prices": {
+      "One Size": "$2.49"
+    },
+    "Tags": []
+  }
+]
