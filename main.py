@@ -3,8 +3,7 @@ from fastapi.responses import PlainTextResponse
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-import csv
-import chardet
+import json
 
 # Load environment variables
 load_dotenv()
@@ -13,42 +12,25 @@ client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 app = FastAPI()
 
-with open("BWW_Menu.csv", "rb") as f:
-    result = chardet.detect(f.read())
-    print(result)
+def load_menu_json():
+    with open("BWW_Menu.json", "r", encoding="utf-8") as f:
+        items = json.load(f)
 
-# Load menu from CSV with updated field names and parse size/price pairs
-def load_menu():
-    menu_items = []
-    with open("BWW_Menu.csv", newline='', encoding="utf-8-sig") as csvfile:
-        reader = csv.DictReader(csvfile, delimiter=",")
+    formatted = []
+    for item in items:
+        size_price_info = ", ".join(
+            [f"{s} - ${p}" for s, p in zip(item["sizes"], item["prices"])]
+        )
+        formatted_item = (
+            f"{item['item_name']} ({item['category']}) - {item['description']}\n"
+            f"Options: {size_price_info} | Tags: {', '.join(item['tags'])}"
+        )
+        formatted.append(formatted_item)
 
-        reader.fieldnames = [field.strip().replace('"', '') for field in reader.fieldnames]
-        
-        print("Detected headers:", reader.fieldnames)
-        
-        expected_fields = {"Category", "Item Name", "Description", "Available Sizes", "Prices", "Tags"}
-        if not expected_fields.issubset(set(reader.fieldnames)):
-            raise ValueError(f"CSV file is missing required fields. Found: {reader.fieldnames}")
+    return "\n\n".join(formatted)
 
-        for row in reader:
-            sizes = [s.strip() for s in row['Available Sizes'].split("/")]
-            prices = [p.strip() for p in row['Prices'].split("/")]
 
-            if len(sizes) != len(prices):
-                size_price_info = "Invalid size/price pairing"
-            else:
-                size_price_info = ", ".join([f"{size} - ${price}" for size, price in zip(sizes, prices)])
-
-            item_line = (
-                f"{row['Item Name']} ({row['Category']}) - {row['Description']}\n"
-                f"Options: {size_price_info} | Tags: {row['Tags']}"
-            )
-            menu_items.append(item_line.strip())
-
-    return "\n\n".join(menu_items)
-
-MENU_TEXT = load_menu()
+MENU_TEXT = load_menu_json()
 
 @app.post("/voice", response_class=PlainTextResponse)
 async def voice(
