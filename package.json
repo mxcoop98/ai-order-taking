@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "chardet": "^2.1.0",
+    "uvicorn": "^0.0.1-security"
+  }
+}

@@ -1,81 +1,103 @@
-from pydantic import BaseModel
-import os
-import xml.etree.ElementTree as ET
 from fastapi import FastAPI, Request, Form
-from fastapi.responses import JSONResponse, Response
-import openai
-
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-app = FastAPI()
-conversation_memory = {}
-
-# Provide your menu structure or load from JSON/CSV here
-MENU_TEXT = """
-Menu:
-- Boneless Wings (6,10,20) - $12.99, $19.99, $34.99
-- Traditional Wings (6,10,20) - $11.99, $18.99, $32.99
-- French Fries - $4.99
-- Mozzarella Sticks - $7.49
-- Soft Drinks (Pepsi, Sprite) - $2.49
-"""
-
-SYSTEM_PROMPT = f"""
-You're an AI ordering assistant. Here's the menu you reference:\n{MENU_TEXT}
-Ask clarifying questions, confirm the order, and repeat total price.
-"""
-
-class ChatInput(BaseModel):
-    user_id: str
-    message: str
-
-
+from fastapi.responses import PlainTextResponse
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
+import csv
+import chardet
+
+# Load environment variables
+load_dotenv()
+
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-@app.post("/order")
-async def order(input: ChatInput):
-    user_id = input.user_id
-    memory = conversation_memory.get(user_id, [])
-    memory.append({"role": "user", "content": input.message})
+app = FastAPI()
+
+with open("BWW_Menu.csv", "rb") as f:
+    result = chardet.detect(f.read())
+    print(result)
+
+# Load menu from CSV with updated field names and parse size/price pairs
+def load_menu():
+    menu_items = []
+    with open("BWW_Menu.csv", newline='', encoding="utf-8-sig") as csvfile:
+        reader = csv.DictReader(csvfile, delimiter=",")
+
+        reader.fieldnames = [field.strip().replace('"', '') for field in reader.fieldnames]
+        
+        print("Detected headers:", reader.fieldnames)
+        
+        expected_fields = {"Category", "Item Name", "Description", "Available Sizes", "Prices", "Tags"}
+        if not expected_fields.issubset(set(reader.fieldnames)):
+            raise ValueError(f"CSV file is missing required fields. Found: {reader.fieldnames}")
+
+        for row in reader:
+            sizes = [s.strip() for s in row['Available Sizes'].split("/")]
+            prices = [p.strip() for p in row['Prices'].split("/")]
+
+            if len(sizes) != len(prices):
+                size_price_info = "Invalid size/price pairing"
+            else:
+                size_price_info = ", ".join([f"{size} - ${price}" for size, price in zip(sizes, prices)])
+
+            item_line = (
+                f"{row['Item Name']} ({row['Category']}) - {row['Description']}\n"
+                f"Options: {size_price_info} | Tags: {row['Tags']}"
+            )
+            menu_items.append(item_line.strip())
+
+    return "\n\n".join(menu_items)
+
+MENU_TEXT = load_menu()
+
+@app.post("/voice", response_class=PlainTextResponse)
+async def voice(
+    Called: str = Form(...),
+    Caller: str = Form(...),
+    CallSid: str = Form(...),
+    SpeechResult: str = Form(None),
+    SpeechConfidence: str = Form(None),
+):
+    user_input = SpeechResult or "I'd like to place an order."
+
+    print(f"User said: {user_input}")
+
+    chat_resp = await order(user_input)
+
+    try:
+        reply_text = chat_resp.choices[0].message.content
+    except Exception as e:
+        reply_text = f"Sorry, there was an error. {str(e)}"
+
+    print(f"AI Reply: {reply_text}")
+
+    twiml = f"""
+    <Response>
+        <Say>{reply_text}</Say>
+        <Pause length="1"/>
+        <Gather input="speech" action="/voice" method="POST">
+            <Say>You can continue your order when you're ready.</Say>
+        </Gather>
+    </Response>
+    """
+
+    return twiml.strip()
+
+
+async def order(user_input: str):
+    """Sends user input to OpenAI ChatCompletion API"""
+    system_prompt = f"""You are a food ordering assistant for Buffalo Wild Wings.
+Here’s the current menu:
+
+{MENU_TEXT}
+
+Your job is to guide the customer through placing an order. If they ask about prices or sizes, respond based on the listed options. If they mention something not listed, offer an alternative. Ask clarifying questions when needed."""
 
     chat_completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
-        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + memory,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_input}
+        ]
     )
-
-    reply = chat_completion.choices[0]["message"]["content"]
-    memory.append({"role": "assistant", "content": reply})
-    conversation_memory[user_id] = memory
-
-    return JSONResponse(content={"reply": reply})
-
-@app.post("/voice")
-async def voice(
-    SpeechResult: str = Form(None),
-    From: str = Form(...),
-):
-    if SpeechResult:
-        # Proxy to the /order function for consistency
-        try:
-            chat_resp = await order(ChatInput(user_id=From, message=SpeechResult))
-            reply_json = await chat_resp.json()
-            reply_text = reply_json.get("reply", "Sorry, I didn’t understand that.")
-        except Exception as e:
-            reply_text = f"There was an error: {str(e)}"
-    else:
-        reply_text = "Hi! Welcome to Buffalo Wild Wings. What would you like to order today?"
-
-    response = ET.Element("Response")
-    gather = ET.SubElement(
-        response,
-        "Gather",
-        input="speech",
-        action="/voice",
-        method="POST",
-        timeout="3"
-    )
-    ET.SubElement(gather, "Say").text = reply_text
-    ET.SubElement(response, "Say").text = "Goodbye."
-    ET.SubElement(response, "Hangup")
-    return Response(content=ET.tostring(response), media_type="application/xml")
+    return chat_completion
